@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background: url(../recurzos/terror.jpg)no-repeat;
+    width: 100%;
+}
+
+.conteinerPrincipal {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.conteinerSecundario {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+}
+
+.logo {
+    box-shadow: 10px 10px 50px 10px rgb(223, 112, 112);
+
+}
+
+.conteinerNav {
+    text-align: center;
+    display: flex;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+}
+
+
+.elementosNav {
+    color: #21f3f0;
+    margin-inline: 2.5rem;
+    font-size: 30px;
+
+}
+
+.elementosNav:hover {
+    color: #258460;
+    background-color: #21f3d0;
+    box-shadow: 0 0 10px #21f3d0, 0 0 40px #21f3d0, 0 0 80px #21f3d0;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+h1 {
+    color: #21f3f0;
+}
+
+h1:hover {
+    color: #258460;
+    background-color: #21f3d0;
+    box-shadow: 0 0 10px #21f3d0, 0 0 40px #21f3d0, 0 0 80px #21f3d0;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+/*botones */
+
+.btnJuego {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.btnJuego {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.btnInicio, .btnDejuego {
+    width: 200px;
+    height: 60px;
+    background: cornflowerblue;
+    box-shadow: 10px 10px 50px 10px rgb(223, 112, 112);    
+    font-size: 25px;
+    color: #21f3d0;
+    cursor: pointer;
+    transition: 1s all;
+    border-radius: 100%
+}
+
+.btnInicio:hover {
+    color: #258460;
+    background-color: #21f3d0;
+    box-shadow: 0 0 10px #21f3d0, 0 0 40px #21f3d0, 0 0 80px #21f3d0;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+/* footer */
+
+.contenedorFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+.elementosFooter {
+    color: #21f3d0;
+    font-size: 35px;
+    margin-inline: 20px
+}
+.elementosFooter:hover {
+    color: #258460;
+    background-color: #21f3d0;
+    box-shadow: 0 0 10px #21f3d0, 0 0 40px #21f3d0, 0 0 80px #21f3d0;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+
+@media (max-width : 740px) {
+
+    .conteinerSecundario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteinerNav {
+        width: 100%;         
+        flex-direction: column;         
+        
+    }
+
+    .elementosNav {
+        margin: 1.0rem;
+        font-size: 30px;
+        
+    }
+    .panel {
+        width: 100%;
+    }
+
+    #imagen {
+        width: 75%;
+    }
+
+    .contenedorFooter {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .elementosFooter {
+        margin: 1.2rem;
+        font-size: 30px;
+    }
+
+    .btnJuego{
+        display: block;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        border-radius: none;
+    }
+   
+
+}

@@ -1,0 +1,98 @@
+.juego {
+    width: 100%;
+
+}
+
+.panel {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.letra_evaluar {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #eee9f0;
+    gap: 3%;
+}
+
+.letra {
+    border-radius: 20px;
+    font-weight: bold;
+    width: 8%;
+    text-align: center;
+    font-size: 40px;
+    color: #29057d;
+
+}
+
+.btnJuego {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btnDejuego:hover {
+    color: #258460;
+    background-color: #21f3d0;
+    box-shadow: 0 0 10px #21f3d0, 0 0 40px #21f3d0, 0 0 80px #21f3d0;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+@media (max-width : 740px) {
+    body {
+        width: 100%;
+        height: auto
+    }
+
+    .juego {
+        height: auto;
+        display: block;
+        flex-direction: column;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0rem;
+    }
+
+    .letra {
+        border-radius: 0;
+        width: 15%;
+        margin-bottom: 1.2rem;
+
+    }
+
+    .letra_evaluar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 0%;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+
+    .btnJuego {
+        gap: 0px;
+    }
+
+    .btnDejuego {
+        border-radius: none;
+    }
+
+}

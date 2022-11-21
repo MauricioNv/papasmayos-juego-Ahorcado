@@ -1,0 +1,37 @@
+.contenedorSecundario{
+    text-align: center;    
+    flex-direction: column;    
+}
+
+.nuevaPalabra{
+    width: 400px;
+    height: 340px;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    color: #21f3d0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px 30px 100px 30px;
+    transition: 1s all;
+}
+@media (max-width : 740px) {
+    .contenedorSecundario{
+        text-align: center;  
+        display: block;  
+        flex-direction: column;    
+    }
+    
+
+    .nuevaPalabra{
+        width: auto;
+        height: auto;
+        font-size: medium;
+    }
+    .subtitulo{
+        color: #21f3d0;
+    }
+    
+}
