@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivine la palabra</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/juego.css">
+    <link rel="stylesheet" href="css/palabras.css">
+    <!-- fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+
+<body>
+    <header class="conteinerPrincipal">
+
+        <div class="conteinerSecundario">
+
+            <div class="logo"> <img src="recurzos/alura logo.png" alt=""> </div>
+
+            <nav class="navPrincipal">
+                <ul class=" conteinerNav">
+                    <a class="elementosNav" href="palabras.html"> Nueva Palabra</a></li>
+                    <a class="elementosNav" href="index.html"> diccionario</a></li>
+                    <a class="elementosNav" href="index.html"> reiniciar</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="titulo">
+
+            <h1> Agrega tu palabra !!!! </h1>
+        </div>
+
+    </header>
+
+
+    <main>     
+
+        <section class="contenedorSecundario">
+
+            <textarea class="nuevaPalabra" placeholder="Nueva palabra"></textarea>
+
+            <div class="alerta">
+                <p class="subtitulo"> sin mayusculas </p>
+            </div>
+
+            <div class="btnJuego">
+
+                <a href="juego.html"> <button class="btnDejuego" id="btn">nuevo juego</button> </a>
+
+                <button  class="btnDejuego" id="btn" class="guardar" onclick="agregarPalabras()">guardar</button>
+
+                <a href="index.html"> <button class="btnDejuego" id="btn">volver</button> </a>
+            </div>
+
+        </section>
+
+    </main>
+
+   
+    <footer>
+        <div class="contenedorFooter">
+            <p class=" elementosFooter"> Adivina la palabra </p>
+            
+            <p class=" elementosFooter">© Copyright </p>
+           
+            <a class= " elementosFooter" href="https://www.linkedin.com/in/mauricio-nuñez-a4311b6a/"> contacto </a></li>
+        </div>
+    </footer>
+</section>
+
+    <script src="ahorcado.js"></script>
+</body>
+
+</html>
